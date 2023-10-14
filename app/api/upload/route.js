@@ -6,6 +6,13 @@ import slugify from "slugify";
 import {initialize, createIndex} from "@/app/src/services/pinecone"
 import SourceFileModal from "@/app/src/models/source-file.model"
 
+export const config = {
+  api:{
+    bodyParser:false
+  }
+}
+
+
 // To handle a POST request to /api
 export async function POST(request) {
 
