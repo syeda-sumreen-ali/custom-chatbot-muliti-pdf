@@ -30,3 +30,5 @@ const SourceFileSchema = new Schema({
 })
 
 const SourceFileModel= mongoose.model.sourceFile || mongoose.model("sourceFile", SourceFileSchema)
+
+export default SourceFileModel
